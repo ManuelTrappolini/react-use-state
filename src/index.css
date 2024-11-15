@@ -38,10 +38,10 @@ header {
 }
 
 .container {
-  width: 60%;
+  width: 40%;
   display: flex;
   justify-content: center;
-
+  margin-left: 5rem;
 
 
 }
@@ -58,5 +58,16 @@ header {
   margin-right: 1rem;
   margin-bottom: 2rem;
   border-radius: 0.5rem;
+
+}
+
+.btn2 {
+  background-color: green;
+  color: black;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  padding: 1rem;
 
 }

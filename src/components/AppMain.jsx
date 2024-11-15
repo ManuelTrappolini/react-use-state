@@ -1,7 +1,7 @@
 
-import Button from "./Button/Button"
+
 import { useState } from 'react'
-import Card from "./Card/Card"
+
 
 import languages from "../data/languages"
 export default function AppMain() {
@@ -20,12 +20,12 @@ export default function AppMain() {
             <div className="container">
                 <div>
                     {languages.map((language, index) => (
-                        <button className="btn" onClick={handleClick} key={index} data-index={index}>{language.title}</button>
+                        <button className={active == index ? "btn2" : "btn"} onClick={handleClick} key={index} data-index={index}>{language.title}</button>
                     )
                     )}
                     {languages.map((language, index) => (
                         <div className={active == index ? "card" : "hide"}>
-                            <div className="card-title">{language.title}</div>
+                            <h3 className="card-title">{language.title}</h3>
                             <div className="card-description">{language.description}</div>
                         </div>
                     ))}
